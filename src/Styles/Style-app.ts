@@ -50,12 +50,12 @@ export const About = styled.section`
     .about-description{
       font-family: 'Roboto Mono', monospace;
       padding: 0 10vw;
-      font-size: 1rem;
+      font-size: 1.3rem;
       color: black;
       background: white;
     }
       h2{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-family: 'Roboto Mono', monospace;
         font-weight: bold;
         padding-bottom: 10px;
@@ -112,7 +112,7 @@ export const Projects = styled.section`
       }
 
         h3{
-          font-size: 1.3rem;
+          font-size: 1.6rem;
           font-family: 'Roboto Mono', monospace;
           font-weight: bold;
           color: rgb(175, 41, 175);
@@ -120,7 +120,7 @@ export const Projects = styled.section`
 
           h4{
             font-family: 'Roboto Mono', monospace;
-            font-size: 1rem;
+            font-size: 1.3rem;
             font-weight: normal;
             color: white;
             margin-top: 0.2rem;
@@ -129,7 +129,7 @@ export const Projects = styled.section`
 
             p{
               font-family: 'Roboto Mono', monospace;
-              font-size: 0.7rem;
+              font-size: 1rem;
             }
 
               img{
@@ -147,13 +147,13 @@ export const Footer = styled.footer`
   justify-content: center;
   font-family: 'Roboto Mono', monospace;
   background: purple;
-  font-size: 0.65rem;
+  font-size: 1rem;
   color: white;
       
     a {
       margin: 0.3rem;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 2.3rem;
       color: white;
     }
 
