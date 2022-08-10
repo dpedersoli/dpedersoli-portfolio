@@ -23,7 +23,7 @@ function App() {
         <About>
           <div className="about-description">
             <h2>Sobre mim</h2>
-            <p>Sou desenvolvedor front-end, com foco em React JS e TS. Busco sempre aprender e me aprimorar mais. Vejo a necessidade de desenvolver projetos que exigem pequenas entregas constantes. Algo que me chama a atenção é a questão da grande necessidade de gerar acessibilidade nas plataformas para o público PCD e para o público no geral que possui qualquer outro fator incapacitante, em desenvolver algo que gere acesso facilitado a todos os públicos, da melhor forma possível. Isso é algo que me encoraja e anima a aprender a ir me aprimorando. Profissional e pessoalmente e encontro sendo útil onde sou requisitado, já fui necessário como na área de comunicação, desenvolvimento e h1s. Acredito muito nos meus valores, e levo isso em conta quando me é proposto algo. Hoje estudo para aprender as novas tecnologias que o mercado exige e procuro tornar meu código cada vez mais simples de entender e de reutilizar pelos meus colegas, para assim podermos ganhar mais agilidade durante a caminhada dos projetos tendo em vista que o contrário disso poderia tornar pesaroso o trabalho.
+            <p>Sou desenvolvedor front-end, com foco em React JS e TS. Busco sempre aprender e me aprimorar mais. Vejo a necessidade de desenvolver projetos que exigem pequenas entregas constantes. Algo que me chama a atenção é a questão da grande necessidade de gerar acessibilidade nas plataformas para o público PCD e para o público no geral que possui qualquer outro fator incapacitante, em desenvolver algo que gere acesso facilitado a todos os públicos, da melhor forma possível. Isso é algo que me encoraja e anima a aprender a ir me aprimorando. Profissional e pessoalmente eu me encontro sendo útil onde sou requisitado, já fui necessário como na área de comunicação, desenvolvimento e testes. Acredito muito nos meus valores, e levo isso em conta quando me é proposto algo. Hoje estudo para aprender as novas tecnologias que o mercado exige e procuro tornar meu código cada vez mais simples de entender e de reutilizar pelos meus colegas, para assim podermos ganhar mais agilidade durante a caminhada dos projetos tendo em vista que o contrário disso poderia tornar pesaroso o trabalho.
             </p>
           </div>
         </About>
@@ -40,7 +40,7 @@ function App() {
 
         <Projects>
           <h2>Projetos</h2><br />
-          <div className="projects">
+          <div className="project">
             <div className="project-description">
               <h3>UpMoney</h3>
               <h4>Descrição do Projeto:</h4>
@@ -48,8 +48,22 @@ function App() {
               </p>
             </div>
             <div className="project-image">
-              <a href="https://ga-up-money.netlify.app/" target="_blank">
-                <img src={UpMoneyLogo} alt="Nome-Do-Projeto1-Daniel-Pedersoli" />
+              <a href="https://github.com/dpedersoli/desafio-chefao" target="_blank">
+                <img src={UpMoneyLogo} alt="upmoney-daniel-pedersoli" />
+              </a>
+            </div>
+          </div>
+
+          <div className="project">
+            <div className="project-description">
+              <h3>RocketHelp</h3>
+              <h4>Descrição do Projeto:</h4>
+              <p>App de gestão de chamados/solicitações. Desenvolvido em React Native com uso do Expo, com uso de <strong>Native Base, Firebase (authentication + firestore), e Phosphor. A aplicação conta com integração de criação de solicitações, modificação dos mesmos e modos de visualização à depennder do status das solicitações.</strong>.
+              </p>
+            </div>
+            <div className="project-image">
+              <a href="https://github.com/dpedersoli/ignite-lab" target="_blank">
+                <h5>RocketHelp</h5>
               </a>
             </div>
           </div>

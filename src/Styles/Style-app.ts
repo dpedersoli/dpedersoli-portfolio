@@ -90,8 +90,8 @@ export const Projects = styled.section`
   justify-content: space-between;
   align-items: center;
   padding: 40px 10px;
-    
-    .projects{
+
+    .project{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -104,7 +104,7 @@ export const Projects = styled.section`
       color: rgb(175, 41, 175);
       }
 
-      .projects{
+      .project{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -125,6 +125,23 @@ export const Projects = styled.section`
             color: white;
             margin-top: 0.2rem;
             margin-bottom: 0.2rem;
+            color: grey;
+          }
+
+          a{
+            text-decoration: none;
+          }
+
+          h5{
+            font-family: 'Roboto Mono', monospace;
+            font-size: 1.7rem;
+            color: rgb(175, 41, 175);
+            border: 2px solid rgb(175, 41, 175);
+            padding: 5px;
+          }
+
+          h5:hover{
+            color: white;
           }
 
             p{
