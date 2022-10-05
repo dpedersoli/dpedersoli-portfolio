@@ -8,22 +8,22 @@ function App() {
 
   return (
     <div>
-      <Header>
-        <nav className="navbar">
-          <img className="logo" src={WhiteLogo} alt="logo-Daniel-Pedersoli" />
+      <Header role="banner">
+        <nav className="navbar" role="navigation" aria-label="main navigation">
+          <img className="logo" src={WhiteLogo} alt="logo-Daniel-Pedersoli" role="menulogo" />
         </nav>
       </Header>
 
-      <main>
+      <main role="main">
         <TopImage>
           <h1 className="titulo"><strong>PORTIFÓLIO</strong> <span> Daniel Pedersoli</span></h1>
-          <img className="foto-daniel-pedersoli" src={DanielImage} alt="foto-Daniel-Pedersoli" />
+          <img className="foto-daniel-pedersoli" src={DanielImage} alt="foto Daniel Pedersoli" title="Daniel Pedersoli" aria-labelledby="description-danielpedersoli" />
         </TopImage>
 
         <About>
           <div className="about-description">
             <h2>Sobre mim</h2>
-            <p>Sou desenvolvedor front-end, com foco em React JS e TS. Busco sempre aprender e me aprimorar mais. Vejo a necessidade de desenvolver projetos que exigem pequenas entregas constantes. Algo que me chama a atenção é a questão da grande necessidade de gerar acessibilidade nas plataformas para o público PCD e para o público no geral que possui qualquer outro fator incapacitante, em desenvolver algo que gere acesso facilitado a todos os públicos, da melhor forma possível. Isso é algo que me encoraja e anima a aprender a ir me aprimorando. Profissional e pessoalmente eu me encontro sendo útil onde sou requisitado, já fui necessário como na área de comunicação, desenvolvimento e testes. Acredito muito nos meus valores, e levo isso em conta quando me é proposto algo. Hoje estudo para aprender as novas tecnologias que o mercado exige e procuro tornar meu código cada vez mais simples de entender e de reutilizar pelos meus colegas, para assim podermos ganhar mais agilidade durante a caminhada dos projetos tendo em vista que o contrário disso poderia tornar pesaroso o trabalho.
+            <p id="description-danielpedersoli">Sou desenvolvedor front-end, com foco em React JS e TS. Busco sempre aprender e me aprimorar mais. Vejo a necessidade de desenvolver projetos que exigem pequenas entregas constantes. Algo que me chama a atenção é a questão da grande necessidade de gerar acessibilidade nas plataformas para o público PCD e para o público no geral que possui qualquer outro fator incapacitante, em desenvolver algo que gere acesso facilitado a todos os públicos, da melhor forma possível. Isso é algo que me encoraja e anima a aprender a ir me aprimorando. Profissional e pessoalmente eu me encontro sendo útil onde sou requisitado, já fui necessário como na área de comunicação, desenvolvimento e testes. Acredito muito nos meus valores, e levo isso em conta quando me é proposto algo. Hoje estudo para aprender as novas tecnologias que o mercado exige e procuro tornar meu código cada vez mais simples de entender e de reutilizar pelos meus colegas, para assim podermos ganhar mais agilidade durante a caminhada dos projetos tendo em vista que o contrário disso poderia tornar pesaroso o trabalho.
             </p>
           </div>
         </About>
@@ -70,7 +70,7 @@ function App() {
         </Projects>
       </main>
 
-      <Footer>
+      <Footer role="contentinfo">
         <img className="logo" src={WhiteLogo} alt="logo-Daniel-Pedersoli" />
         <p>Todos os direitos reservados para <strong>Daniel Pedersoli</strong></p>
         <p>Produzido por Daniel Pedersoli</p>
