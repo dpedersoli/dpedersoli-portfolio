@@ -1,6 +1,6 @@
-import WhiteLogo from '/src/images/white-logo-Daniel-Pedersoli.png'
-import DanielImage from '/src/images/Daniel_Pedersoli_foto_perfil.png'
-import UpMoneyLogo from '/src/images/UpMoney-Logo.png'
+import WhiteLogo from '/src/assets/images/white-logo-Daniel-Pedersoli.png'
+import DanielImage from '/src/assets/images/Daniel_Pedersoli_foto_perfil.png'
+import UpMoneyLogo from '/src/assets/images/UpMoney-Logo.png'
 
 import { Header, TopImage, About, Technologies, Projects, Footer } from './Styles/Style-app'
 import { Project } from './components/Project'
