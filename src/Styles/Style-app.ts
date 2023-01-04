@@ -10,7 +10,7 @@ export const Header = styled.header`
     .logo{
       width: 3.2rem;
       height: auto;
-    } 
+    }
 `
 
 export const TopImage = styled.section`
@@ -25,7 +25,7 @@ export const TopImage = styled.section`
       font-family: 'Press Start 2P', cursive;
       font-size: 2rem;
       color: rgb(175, 41, 175);
-      width: 27%;
+      width: 20rem;
     }
       h1 strong{
         color: black;
@@ -39,6 +39,23 @@ export const TopImage = styled.section`
           max-width: 70%;
           height: auto;
         }
+
+@media screen and (max-width: 400px){
+  flex-direction: column-reverse;
+  padding: 2rem 0;
+
+  h1{
+    font-size: 1.5rem;
+    width: 15rem;
+  }
+
+  .foto-daniel-pedersoli{
+    width: 70%;
+    max-width: 70%;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  }
+}
 `
 
 export const About = styled.section`
@@ -48,111 +65,72 @@ export const About = styled.section`
   background: white;
 
     .about-description{
-      font-family: 'Roboto Mono', monospace;
-      padding: 0 10vw;
+      padding: 0 4.5rem;
       font-size: 1.3rem;
       color: black;
       background: white;
     }
       h2{
         font-size: 1.8rem;
-        font-family: 'Roboto Mono', monospace;
         font-weight: bold;
         padding-bottom: 10px;
         color: rgb(175, 41, 175);
-      } 
-`
+      }
 
-export const Technologies = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  font-size: 23px;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: bold;
-  color: rgb(175, 41, 175);
-
-    .technologies{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: white;
-      padding-bottom: 3vh;
-      font-size: 5rem;
-    }
-`
-
-export const Projects = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 10px;
-
-    .project{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 20px 0px;
+@media screen and (max-width: 720px){
+  .about-description{
+      text-align: center;
     }
 
     h2{
-      font-size: 2.5rem;
-      font-family: 'Roboto Mono', monospace;
-      color: rgb(175, 41, 175);
-      }
+      margin-bottom: 1rem;
+    }
+}
 
-      .project{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 70%;
-      }
+@media screen and (max-width: 400px){
+  .about-description{
+      text-align: center;
+      padding: 0 1rem;
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+    }
 
-        h3{
-          font-size: 1.6rem;
-          font-family: 'Roboto Mono', monospace;
-          font-weight: bold;
-          color: rgb(175, 41, 175);
-        }
+    h2{
+      margin-bottom: 1rem;
+    }
+}
+`
 
-          h4{
-            font-family: 'Roboto Mono', monospace;
-            font-size: 1.3rem;
-            font-weight: normal;
-            color: white;
-            margin-top: 0.2rem;
-            margin-bottom: 0.2rem;
-            color: grey;
-          }
+export const Technologies = styled.section`
+  .technologies{
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
 
-          a{
-            text-decoration: none;
-          }
+@media screen and (max-width: 400px){
+   img{
+    width: 3.5rem;
+    height: 3rem;
+  }
+}
+`
 
-          h5{
-            font-family: 'Roboto Mono', monospace;
-            font-size: 1.7rem;
-            color: rgb(175, 41, 175);
-            border: 2px solid rgb(175, 41, 175);
-            padding: 5px;
-          }
+export const Projects = styled.section`
+margin: 1rem;
 
-          h5:hover{
-            color: white;
-          }
+  h2{
+    font-size: 2.5rem;
+    color: rgb(175, 41, 175);
+    text-align: center;
+    }
 
-            p{
-              font-family: 'Roboto Mono', monospace;
-              font-size: 1rem;
-            }
-
-              img{
-                margin-left: 5rem;
-                width: 10rem;
-              }
+@media screen and (max-width: 400px){
+  h2{
+    font-size: 2rem;
+    }
+}
 `
 
 export const Footer = styled.footer`
@@ -162,10 +140,10 @@ export const Footer = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Roboto Mono', monospace;
   background: purple;
   font-size: 1rem;
   color: white;
+  text-align: center;
       
     a {
       margin: 0.3rem;
@@ -187,4 +165,10 @@ export const Footer = styled.footer`
             width: 3rem;
             height: auto;
           }
+
+@media screen and (max-width: 400px){
+  p{
+    font-size: 0.9rem;
+    }
+}
 `

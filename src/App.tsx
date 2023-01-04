@@ -3,7 +3,7 @@ import DanielImage from '/src/images/Daniel_Pedersoli_foto_perfil.png'
 import UpMoneyLogo from '/src/images/UpMoney-Logo.png'
 
 import { Header, TopImage, About, Technologies, Projects, Footer } from './Styles/Style-app'
-import { Project } from './pages/Project'
+import { Project } from './components/Project'
 
 function App() {
 
@@ -40,10 +40,12 @@ function App() {
         </Technologies>
 
         <Projects>
-          <h2>Projetos</h2><br />
+          <h2>Projetos</h2>
+          <div className="project-grid">
           <Project
             projectName="UpMoney"
-            projectDescription="PWA (Progressive Web App) funcional e instalável de uma aplicação de educação financeira voltado para usuários de Mobile. A aplicação foi desenvolvida por mim (front-end) e outro colega (back-end). O Front-end foi desenvolvido utilizando React, Vite, Typescript, Axios, Tailwind e React-Router-Dom . A aplicação consiste no uso recursivo de API's com Cadastro, Login, Recuperação de Senha e um design funcional e interativo. Abra o projeto clicando no ícone ao lado"
+            projectDescription="PWA (Progressive Web App) funcional e instalável de uma aplicação de educação financeira voltado para usuários de Mobile. A aplicação foi desenvolvida por mim (front-end) e outro colega (back-end). O Front-end foi desenvolvido utilizando React, Vite, Typescript, Axios, Tailwind e React-Router-Dom . A aplicação consiste no uso recursivo de API's com Cadastro, Login, Recuperação de Senha e um design funcional e interativo."
+            projectLinkInvite="Abra o projeto clicando no ícone."
             projectLink="https://github.com/dpedersoli/desafio-chefao"
             projectImage={UpMoneyLogo}
             projectImageAlt="upmoney-daniel-pedersoli"
@@ -51,24 +53,27 @@ function App() {
 
           <Project
             projectName="RocketHelp"
-            projectDescription="App de gestão de chamados/solicitações. Desenvolvido em React Native com uso do Expo, com uso de Native Base, Firebase (authentication + firestore), e Phosphor. A aplicação conta com integração de criação de solicitações, modificação dos mesmos e modos de visualização à depennder do status das solicitações. Abra o projeto clicando no título ao lado."
+            projectDescription="App de gestão de chamados/solicitações. Desenvolvido em React Native com uso do Expo, com uso de Native Base, Firebase (authentication + firestore), e Phosphor. A aplicação conta com integração de criação de solicitações, modificação dos mesmos e modos de visualização à depennder do status das solicitações"
+            projectLinkInvite="Abra o projeto clicando no ícone."
             projectLink="https://github.com/dpedersoli/ignite-lab"
             textNotImage="RocketHelp"
           />
 
           <Project
             projectName="Responsive Website"
-            projectDescription="Site responsivo com uso de menus dropdown e telas interativas. Desenvolvido com objetivo de me qualificar e desenvolver em diferentes ambientes. Foi utilizado HTML, CSS + SASS, Javascript + Jquery, e Gulp para o desenvolvimento desse projeto. Abra o projeto clicando no título ao lado."
+            projectDescription="Site responsivo com uso de menus dropdown e telas interativas. Desenvolvido com objetivo de me qualificar e desenvolver em diferentes ambientes. Foi utilizado HTML, CSS + SASS, Javascript + Jquery, e Gulp para o desenvolvimento desse projeto."
+            projectLinkInvite="Abra o projeto clicando no ícone."
             projectLink="https://github.com/dpedersoli/dot"
             textNotImage="Responsive Website"
           />
+          </div>
         </Projects>
         
       </main>
 
       <Footer role="contentinfo">
         <img className="logo" src={WhiteLogo} alt="logo-Daniel-Pedersoli" />
-        <p>Todos os direitos reservados para <strong>Daniel Pedersoli</strong></p>
+        <p>Todos os direitos reservados para <br/><strong>Daniel Pedersoli</strong></p>
         <p>Produzido por Daniel Pedersoli</p>
         <div><br />
           <a href="https://github.com/dpedersoli" target="_blank">
