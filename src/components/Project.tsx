@@ -5,12 +5,13 @@ interface Props {
   projectDescription: string;
   projectLinkInvite?: string;
   projectLink: string;
+  projectWebsite?: string;
   projectImage?: string;
   projectImageAlt?: string;
   textNotImage?: string;
 }
 
-export function Project({ projectName, projectDescription, projectLinkInvite, projectLink, projectImage, projectImageAlt, textNotImage }: Props){
+export function Project({ projectName, projectDescription, projectLinkInvite, projectLink, projectWebsite, projectImage, projectImageAlt, textNotImage }: Props){
   return(
     <Projects>
         <div className="project">
@@ -20,11 +21,16 @@ export function Project({ projectName, projectDescription, projectLinkInvite, pr
             <p>{projectDescription}</p>
             <p className="strong">{projectLinkInvite}</p>
           </div>
+
           <div className="project-link">
             <a href={projectLink} target="_blank">
+              <h5>Github</h5>
+            </a>
+            <a href={projectWebsite} target="_blank">
               { projectImage
               ? <img src={projectImage} alt={projectImageAlt} />
-              : <h5>{textNotImage}</h5>
+              : textNotImage &&
+              <h5>{textNotImage}</h5>
               }
             </a>
           </div>

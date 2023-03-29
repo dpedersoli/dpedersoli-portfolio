@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const Projects = styled.section`
 .project{
   display: flex;
+  justify-content: space-between;
   margin: 2.5rem 4rem;
 }
 
-  h3{
+h3{
     font-size: 1.6rem;
     font-weight: bold;
     color: rgb(175, 41, 175);
@@ -35,8 +36,7 @@ export const Projects = styled.section`
 
           h5:hover{
             color: white;
-            border: 4px solid rgb(175, 41, 175);
-            transition: all 0.3s;
+            transition: all 0.1s;
           }
 
             p{
@@ -51,16 +51,28 @@ export const Projects = styled.section`
 
                 img{
                   margin-left: 5rem;
-                  width: 10rem;
+                  width: 7rem;
                 }
+
+                  .project-link{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    cursor: pointer;
+                  }
 
 @media screen and (max-width: 720px){
   .project{
     margin: 2.5rem 1rem;
+    flex-direction: column;
   }
+
+    .project-link{
+      gap: 0rem;
+    }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
   .project{
     flex-direction: column;
     align-items: center;
@@ -90,8 +102,12 @@ export const Projects = styled.section`
 
               h5{
                 margin-right: 5rem;
-                margin-top: 3rem;
-                margin-bottom: 4.5rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+              }
+
+              .project-link{
+                gap: 0;
               }
   }
 `

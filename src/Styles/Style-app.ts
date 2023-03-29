@@ -40,7 +40,7 @@ export const TopImage = styled.section`
           height: auto;
         }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
   flex-direction: column-reverse;
   padding: 2rem 0;
 
@@ -87,7 +87,7 @@ export const About = styled.section`
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
   .about-description{
       text-align: center;
       padding: 0 1rem;
@@ -109,7 +109,7 @@ export const Technologies = styled.section`
       padding-bottom: 2rem;
     }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
    img{
     width: 3.5rem;
     height: 3rem;
@@ -120,13 +120,18 @@ export const Technologies = styled.section`
 export const Projects = styled.section`
 margin: 1rem;
 
+/* .project-grid{
+  display: flex;
+  flex-direction: column;
+} */
+
   h2{
     font-size: 2.5rem;
     color: rgb(175, 41, 175);
     text-align: center;
     }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
   h2{
     font-size: 2rem;
     }
@@ -166,7 +171,7 @@ export const Footer = styled.footer`
             height: auto;
           }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
   p{
     font-size: 0.9rem;
     }

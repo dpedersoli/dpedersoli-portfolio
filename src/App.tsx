@@ -1,6 +1,8 @@
 import WhiteLogo from '/src/assets/images/white-logo-Daniel-Pedersoli.png'
 import DanielImage from '/src/assets/images/Daniel_Pedersoli_foto_perfil.png'
 import UpMoneyLogo from '/src/assets/images/UpMoney-Logo.png'
+import MarETerraTransferLogo from '/src/assets/images/mar-e-terra-transfer-logo.png'
+import CepAppLogo from '/src/assets/images/cep-app.png'
 
 import { Header, TopImage, About, Technologies, Projects, Footer } from './Styles/Style-app'
 import { Project } from './components/Project'
@@ -42,30 +44,49 @@ function App() {
         <Projects>
           <h2>Projetos</h2>
           <div className="project-grid">
-          <Project
-            projectName="UpMoney"
-            projectDescription="PWA (Progressive Web App) funcional e instalável de uma aplicação de educação financeira voltado para usuários de Mobile. A aplicação foi desenvolvida por mim (front-end) e outro colega (back-end). O Front-end foi desenvolvido utilizando React, Vite, Typescript, Axios, Tailwind e React-Router-Dom . A aplicação consiste no uso recursivo de API's com Cadastro, Login, Recuperação de Senha e um design funcional e interativo."
-            projectLinkInvite="Abra o projeto clicando no ícone."
-            projectLink="https://github.com/dpedersoli/desafio-chefao"
-            projectImage={UpMoneyLogo}
-            projectImageAlt="upmoney-daniel-pedersoli"
-          />
+            <Project
+              projectName="UpMoney"
+              projectDescription="PWA (Progressive Web App) funcional e instalável de uma aplicação de educação financeira voltado para usuários de Mobile. A aplicação foi desenvolvida por mim (front-end) e outro colega (back-end). O Front-end foi desenvolvido utilizando React, Vite, Typescript, Axios, Tailwind e React-Router-Dom . A aplicação consiste no uso recursivo de API's com Cadastro, Login, Recuperação de Senha e um design funcional e interativo."
+              projectLinkInvite="Abra o projeto clicando nos ícone."
+              projectLink="https://github.com/dpedersoli/desafio-chefao"
+              projectImage={UpMoneyLogo}
+              projectWebsite="https://ga-up-money.netlify.app/"
+              projectImageAlt="upmoney-daniel-pedersoli"
+            />
 
-          <Project
-            projectName="RocketHelp"
-            projectDescription="App de gestão de chamados/solicitações. Desenvolvido em React Native com uso do Expo, com uso de Native Base, Firebase (authentication + firestore), e Phosphor. A aplicação conta com integração de criação de solicitações, modificação dos mesmos e modos de visualização à depennder do status das solicitações"
-            projectLinkInvite="Abra o projeto clicando no ícone."
-            projectLink="https://github.com/dpedersoli/ignite-lab"
-            textNotImage="RocketHelp"
-          />
+            <Project
+              projectName="RocketHelp"
+              projectDescription="App de gestão de chamados/solicitações. Desenvolvido em React Native com uso do Expo, com uso de Native Base, Firebase (authentication + firestore), e Phosphor. A aplicação conta com integração de criação de solicitações, modificação dos mesmos e modos de visualização à depennder do status das solicitações"
+              projectLinkInvite="Abra o projeto clicando no ícone."
+              projectLink="https://github.com/dpedersoli/ignite-lab"
+            />
 
-          <Project
-            projectName="Responsive Website"
-            projectDescription="Site responsivo com uso de menus dropdown e telas interativas. Desenvolvido com objetivo de me qualificar e desenvolver em diferentes ambientes. Foi utilizado HTML, CSS + SASS, Javascript + Jquery, e Gulp para o desenvolvimento desse projeto."
-            projectLinkInvite="Abra o projeto clicando no ícone."
-            projectLink="https://github.com/dpedersoli/dot"
-            textNotImage="Responsive Website"
-          />
+            <Project
+              projectName="Log-in Form"
+              projectDescription="Desafio de fazer um formulário de log-in funcional com limitações e restrições no uso de código, desenvolvido conforme orientado (as regras estão no 'README.md')."
+              projectLinkInvite="Abra o projeto clicando no ícone."
+              projectLink="https://github.com/dpedersoli/react-js-login"
+            />
+
+            <Project
+              projectName="Mar e Terra Transfer"
+              projectDescription="Site responsivo desenvolvido para cliente 'Mar e Terra Transfer' usando React, Typescript, Tailwind, CSS e libs de recursos visuais."
+              projectLinkInvite="Abra o projeto clicando nos ícone."
+              projectLink="https://github.com/dpedersoli/mar-e-terra-transfer"
+              projectImage={MarETerraTransferLogo}
+              projectWebsite="https://mar-e-terra-transfer.netlify.app/"
+              textNotImage="Mar e Terra Transfer"
+            />
+
+            <Project
+              projectName="CEP App"
+              projectDescription="Site para consulta de CEP por meio de API. Foi desenvolvido um CRUD utilizando React, Typescript, Tailwind, CSS."
+              projectLinkInvite="Abra o projeto clicando nos ícone."
+              projectLink="https://github.com/dpedersoli/cep-app"
+              projectImage={CepAppLogo}
+              projectWebsite="https://cep-app-list.netlify.app/"
+              textNotImage="CEP App"
+            />
           </div>
         </Projects>
         
