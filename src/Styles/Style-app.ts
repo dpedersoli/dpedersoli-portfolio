@@ -120,11 +120,6 @@ export const Technologies = styled.section`
 export const Projects = styled.section`
 margin: 1rem;
 
-/* .project-grid{
-  display: flex;
-  flex-direction: column;
-} */
-
   h2{
     font-size: 2.5rem;
     color: rgb(175, 41, 175);

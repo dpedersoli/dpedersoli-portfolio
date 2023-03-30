@@ -4,6 +4,7 @@ export const Projects = styled.section`
 .project{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 2.5rem 4rem;
 }
 

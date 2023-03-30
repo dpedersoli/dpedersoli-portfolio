@@ -28,7 +28,7 @@ export function Project({ projectName, projectDescription, projectLinkInvite, pr
             </a>
             <a href={projectWebsite} target="_blank">
               { projectImage
-              ? <img src={projectImage} alt={projectImageAlt} />
+              ? <img src={projectImage} alt={projectImageAlt}/>
               : textNotImage &&
               <h5>{textNotImage}</h5>
               }
