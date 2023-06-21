@@ -3,6 +3,7 @@ import DanielImage from '/src/assets/images/Daniel_Pedersoli_foto_perfil.png'
 import UpMoneyLogo from '/src/assets/images/UpMoney-Logo.png'
 import MarETerraTransferLogo from '/src/assets/images/mar-e-terra-transfer-logo.png'
 import CepAppLogo from '/src/assets/images/cep-app.png'
+import ToDoListLogo from '../src/assets/images/logo-desafio-ignite.svg'
 
 import { Header, TopImage, About, Technologies, Projects, Footer } from './Styles/Style-app'
 import { Project } from './components/Project'
@@ -47,7 +48,7 @@ function App() {
             <Project
               projectName="UpMoney"
               projectDescription="PWA (Progressive Web App) funcional e instalável de uma aplicação de educação financeira voltado para usuários de Mobile. A aplicação foi desenvolvida por mim (front-end) e outro colega (back-end). O Front-end foi desenvolvido utilizando React, Vite, Typescript, Axios, Tailwind e React-Router-Dom . A aplicação consiste no uso recursivo de API's com Cadastro, Login, Recuperação de Senha e um design funcional e interativo."
-              projectLinkInvite="Abra o projeto clicando nos ícone."
+              projectLinkInvite="Abra o projeto clicando nos ícones."
               projectLink="https://github.com/dpedersoli/desafio-chefao"
               projectImage={UpMoneyLogo}
               projectWebsite="https://ga-up-money.netlify.app/"
@@ -57,21 +58,21 @@ function App() {
             <Project
               projectName="RocketHelp"
               projectDescription="App de gestão de chamados/solicitações. Desenvolvido em React Native com uso do Expo, com uso de Native Base, Firebase (authentication + firestore), e Phosphor. A aplicação conta com integração de criação de solicitações, modificação dos mesmos e modos de visualização à depennder do status das solicitações"
-              projectLinkInvite="Abra o projeto clicando no ícone."
+              projectLinkInvite="Abra o projeto clicando no ícones."
               projectLink="https://github.com/dpedersoli/ignite-lab"
             />
 
             <Project
               projectName="Log-in Form"
               projectDescription="Desafio de fazer um formulário de log-in funcional com limitações e restrições no uso de código, desenvolvido conforme orientado (as regras estão no 'README.md')."
-              projectLinkInvite="Abra o projeto clicando no ícone."
+              projectLinkInvite="Abra o projeto clicando no ícones."
               projectLink="https://github.com/dpedersoli/react-js-login"
             />
 
             <Project
               projectName="Mar e Terra Transfer"
-              projectDescription="Site responsivo desenvolvido para cliente 'Mar e Terra Transfer' usando React, Typescript, Tailwind, CSS e libs de recursos visuais."
-              projectLinkInvite="Abra o projeto clicando nos ícone."
+              projectDescription="Projeto responsivo desenvolvido para cliente 'Mar e Terra Transfer' usando React, Typescript, Tailwind, CSS e libs de recursos visuais."
+              projectLinkInvite="Abra o projeto clicando nos ícones."
               projectLink="https://github.com/dpedersoli/mar-e-terra-transfer"
               projectImage={MarETerraTransferLogo}
               projectWebsite="https://mar-e-terra-transfer.netlify.app/"
@@ -80,12 +81,22 @@ function App() {
 
             <Project
               projectName="CEP App"
-              projectDescription="Site para consulta de CEP por meio de API. Foi desenvolvido um CRUD utilizando React, Typescript, Tailwind, CSS."
-              projectLinkInvite="Abra o projeto clicando nos ícone."
+              projectDescription="Projeto para consulta de CEP por meio de API. Foi desenvolvido um CRUD utilizando React, Typescript, Tailwind, CSS."
+              projectLinkInvite="Abra o projeto clicando nos ícones."
               projectLink="https://github.com/dpedersoli/cep-app"
               projectImage={CepAppLogo}
               projectWebsite="https://cep-app-list.netlify.app/"
               textNotImage="CEP App"
+            />
+
+            <Project
+              projectName="To Do list"
+              projectDescription="Projeto de lista de tarefas com funções de adicionar, concluir e deletar tarefas. Foi desenvolvido um CRUD utilizando React, Typescript, CSS Modules, Responsividade, Phosphor React, Date-fns e Regras e técnicas de Clean Code."
+              projectLinkInvite="Abra o projeto clicando nos ícones."
+              projectLink="https://github.com/dpedersoli/ignite-react-ts-desafio-01"
+              projectImage={ToDoListLogo}
+              projectWebsite="https://todo-list-dpedersoli.netlify.app/"
+              textNotImage="To Do list"
             />
           </div>
         </Projects>
