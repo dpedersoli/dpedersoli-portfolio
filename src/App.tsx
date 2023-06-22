@@ -104,7 +104,6 @@ function App() {
       </main>
 
       <Footer role="contentinfo">
-        <img className="logo" src={WhiteLogo} alt="logo-Daniel-Pedersoli" />
         <p>Todos os direitos reservados para <br/><strong>Daniel Pedersoli</strong></p>
         <p>Produzido por Daniel Pedersoli</p>
         <div><br />

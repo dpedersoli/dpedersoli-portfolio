@@ -141,7 +141,8 @@ export const Footer = styled.footer`
   align-items: center;
   justify-content: center;
   background: purple;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
   color: white;
   text-align: center;
       
