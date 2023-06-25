@@ -56,7 +56,7 @@ function App() {
 
              <Project
               projectName="To Do list"
-              projectDescription="Projeto de lista de tarefas com funções de adicionar, concluir e deletar tarefas. Foi desenvolvido um CRUD utilizando React, Typescript, CSS Modules, Responsividade, Phosphor React, Date-fns e Regras e técnicas de Clean Code."
+              projectDescription="Projeto de lista de tarefas com funções de adicionar, concluir e deletar tarefas. Foi desenvolvido um CRUD utilizando React, Typescript, CSS Modules, Responsividade, Phosphor React, Date-fns, Local Storage e Regras e técnicas de Clean Code."
               projectLinkInvite="Abra o projeto clicando nos ícones."
               projectLink="https://github.com/dpedersoli/ignite-react-ts-desafio-01"
               projectImage={ToDoListLogo}
@@ -73,7 +73,7 @@ function App() {
 
             <Project
               projectName="CEP App"
-              projectDescription="Projeto para consulta de CEP por meio de API. Foi desenvolvido um CRUD utilizando React, Typescript, Tailwind, CSS."
+              projectDescription="Projeto para consulta de CEP por meio de API. Foi desenvolvido um CRUD utilizando React, Typescript, Tailwind, CSS, Axios e Local Storage."
               projectLinkInvite="Abra o projeto clicando nos ícones."
               projectLink="https://github.com/dpedersoli/cep-app"
               projectImage={CepAppLogo}
