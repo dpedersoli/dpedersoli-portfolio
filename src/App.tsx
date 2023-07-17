@@ -2,7 +2,6 @@ import WhiteLogo from '/src/assets/images/white-logo-Daniel-Pedersoli.png'
 import DanielImage from '/src/assets/images/Daniel_Pedersoli_foto_perfil.png'
 import MarETerraTransferLogo from '/src/assets/images/mar-e-terra-transfer-logo.png'
 import CepAppLogo from '/src/assets/images/cep-app.png'
-import ToDoListLogo from '../src/assets/images/logo-desafio-ignite.svg'
 
 import { Header, TopImage, About, Technologies, Projects, Footer } from './Styles/Style-app'
 import { Project } from './components/Project'
@@ -59,7 +58,7 @@ function App() {
               projectDescription="Projeto de lista de tarefas com funções de adicionar, concluir e deletar tarefas. Foi desenvolvido um CRUD utilizando React, Typescript, CSS Modules, Responsividade, Phosphor React, Date-fns, Local Storage e Regras e técnicas de Clean Code."
               projectLinkInvite="Abra o projeto clicando nos ícones."
               projectLink="https://github.com/dpedersoli/ignite-react-ts-desafio-01"
-              projectImage={ToDoListLogo}
+              projectImage={WhiteLogo}
               projectWebsite="https://todo-list-dpedersoli.netlify.app/"
               textNotImage="To Do list"
             />
