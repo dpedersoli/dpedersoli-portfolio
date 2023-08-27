@@ -1,4 +1,4 @@
-import { Projects } from './projectStyle'
+import { Projects } from "./projectStyle";
 
 interface Props {
   projectName: string;
@@ -6,12 +6,21 @@ interface Props {
   projectLinkInvite?: string;
   projectLink: string;
   projectWebsite?: string;
-  projectImage?: string;
-  projectImageAlt?: string;
-  textNotImage?: string;
+  projectImage?: any;
+  projectImageAlt?: any;
+  textNotImage?: any;
 }
 
-export function Project({ projectName, projectDescription, projectLinkInvite, projectLink, projectWebsite, projectImage, projectImageAlt, textNotImage }: Props) {
+export function Project({
+  projectName,
+  projectDescription,
+  projectLinkInvite,
+  projectLink,
+  projectImage,
+  projectWebsite,
+  projectImageAlt,
+  textNotImage,
+}: Props) {
   return (
     <Projects>
       <div className="project">
@@ -27,14 +36,14 @@ export function Project({ projectName, projectDescription, projectLinkInvite, pr
             <h5>Github</h5>
           </a>
           <a href={projectWebsite} target="_blank">
-            {projectImage
-              ? <img src={projectImage} alt={projectImageAlt} />
-              : textNotImage &&
-              <h5>{textNotImage}</h5>
-            }
+            {projectImage ? (
+              <img src={projectImage} alt={projectImageAlt} />
+            ) : (
+              textNotImage && <h5>{textNotImage}</h5>
+            )}
           </a>
         </div>
       </div>
     </Projects>
-  )
+  );
 }
